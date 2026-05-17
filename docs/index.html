@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raport Konwergencji Modelu Solowa</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f8f9fb; color: #202124; }
+    .container { max-width: 1000px; margin: auto; background: #ffffff; padding: 24px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); }
+    h1, h2, h3 { color: #1f2d3d; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { border: 1px solid #d1d5db; padding: 10px; text-align: left; }
+    th { background: #f1f5f9; }
+    .chart { margin: 24px 0; }
+    img { max-width: 100%; border: 1px solid #d1d5db; }
+    ul { margin: 0; padding-left: 20px; }
+    .answer-box { background: #e8f4f8; padding: 16px; border-left: 4px solid #0288d1; margin: 16px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Raport Konwergencji Modelu Solowa</h1>
+    <p><strong>Pytanie badawcze:</strong> Czy dane empiryczne potwierdzają konwergencję przewidywaną przez model Solowa?</p>
+    <div class="answer-box">
+      <p><strong>Odpowiedź na pytanie badawcze:</strong></p>
+      <p>Tak, dane empiryczne potwierdzają konwergencję przewidywaną przez model Solowa dla badanej próby krajów. Zarówno beta-konwergencja, jak i sigma-konwergencja są obserwowane: biedniejsze kraje rosły szybciej, a różnice dochodowe między krajami zmniejszyły się w badanym okresie. To sugeruje, że kraje zbliżają się do siebie pod względem dochodów per capita.</p>
+    </div>
+    <p><strong>Źródło danych:</strong> World Bank API / offline CSV</p>
+    <p><strong>Okres:</strong> 2000 - 2023</p>
+    <p><strong>Kraje:</strong> POL, DEU, CZE, SVK, HUN, ROU, BGR, UKR, ESP, PRT</p>
+    <h2>Podsumowanie</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Kod</th>
+          <th>Kraj</th>
+          <th>Rok początkowy</th>
+          <th>Rok końcowy</th>
+          <th>PKB początkowy</th>
+          <th>PKB końcowy</th>
+          <th>Wzrost roczny</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>BG</td><td>Bulgaria</td><td>2000</td><td>2023</td><td>3717.93</td><td>9787.27</td><td>0.0430</td></tr><tr><td>CZ</td><td>Czechia</td><td>2000</td><td>2023</td><td>12543.94</td><td>20272.59</td><td>0.0211</td></tr><tr><td>DE</td><td>Germany</td><td>2000</td><td>2023</td><td>35104.13</td><td>44368.99</td><td>0.0102</td></tr><tr><td>ES</td><td>Spain</td><td>2000</td><td>2023</td><td>24106.88</td><td>28558.63</td><td>0.0074</td></tr><tr><td>HU</td><td>Hungary</td><td>2000</td><td>2023</td><td>8979.74</td><td>16375.05</td><td>0.0265</td></tr><tr><td>PL</td><td>Poland</td><td>2000</td><td>2023</td><td>7401.58</td><td>17410.38</td><td>0.0379</td></tr><tr><td>PT</td><td>Portugal</td><td>2000</td><td>2023</td><td>18822.09</td><td>22417.16</td><td>0.0076</td></tr><tr><td>RO</td><td>Romania</td><td>2000</td><td>2023</td><td>4569.31</td><td>12340.82</td><td>0.0441</td></tr><tr><td>SK</td><td>Slovak Republic</td><td>2000</td><td>2023</td><td>8997.21</td><td>19383.37</td><td>0.0339</td></tr><tr><td>UA</td><td>Ukraine</td><td>2000</td><td>2023</td><td>1409.22</td><td>2164.26</td><td>0.0188</td></tr>
+      </tbody>
+    </table>
+    <h2>Beta-konwergencja</h2>
+    <p>Obserwuje się beta-konwergencję (współczynnik β = -0.0087). Kraje o niższym początkowym PKB per capita rosły szybciej niż kraje bogatsze. Współczynnik determinacji R² = 0.3428 sugeruje, że około 34.3% zmienności tempa wzrostu można wyjaśnić początkowym poziomem dochodu. To wskazuje na zjawisko doganiania biedniejszych krajów w stosunku do bogatszych, co jest zgodne z przewidywaniami modelu Solowa.</p>
+    <h2>Sigma-konwergencja</h2>
+    <p>Obserwuje się sigma-konwergencję. Rozproszenie dochodów (mierzone odchyleniem standardowym log PKB) zmniejszyło się z 0.9540 w roku 2000 do 0.8092 w roku 2023, co stanowi zmianę o -15.18%. To oznacza, że różnice dochodowe między krajami zmniejszyły się, a kraje stały się bardziej podobne pod względem dochodów per capita.</p>
+    <div class='chart'><h3>Szereg czasowy PKB per capita</h3><img src='gdp_per_capita.png' alt='Szereg czasowy PKB per capita'></div><div class='chart'><h3>Wykres beta-konwergencji</h3><img src='beta_convergence.png' alt='Wykres beta-konwergencji'></div><div class='chart'><h3>Trend sigma-konwergencji</h3><img src='sigma_convergence.png' alt='Trend sigma-konwergencji'></div>
+    <h2>Wnioski</h2>
+    <p>Tak, dane empiryczne potwierdzają konwergencję przewidywaną przez model Solowa dla badanej próby krajów. Zarówno beta-konwergencja, jak i sigma-konwergencja są obserwowane: biedniejsze kraje rosły szybciej, a różnice dochodowe między krajami zmniejszyły się w badanym okresie. To sugeruje, że kraje zbliżają się do siebie pod względem dochodów per capita.</p>
+    <h2>Ograniczenia</h2>
+    <ul>
+      <li>Wyniki zależą od wyboru krajów i okresu.</li><li>Analiza uwzględnia tylko PKB per capita i nie kontroluje innych czynników.</li><li>Raport jest opisowy i nie ustala związków przyczynowych.</li>
+    </ul>
+  </div>
+</body>
+</html>
