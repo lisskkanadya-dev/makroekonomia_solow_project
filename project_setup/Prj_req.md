@@ -1,10 +1,12 @@
-# Technical Requirements: Solow Model and Convergence Empirical Test
+# Wymagania Techniczne: Model Solowa i Test Empiryczny Konwergencji
 
-## 1. Project Overview
+## 1. Przegląd projektu
 
-This project is a lightweight Python web application for academic purposes. It automatically downloads GDP per capita data for selected countries, calculates growth indicators, tests beta-convergence and sigma-convergence, generates charts, and presents interpretable conclusions.
+Projekt jest lekką aplikacją Python dla celów akademickich. Automatycznie pobiera dane o PKB per capita dla wybranych krajów, oblicza wskaźniki wzrostu, sprawdza beta-konwergencję i sigma-konwergencję, generuje wykresy i prezentuje wnioski zrozumiałe dla odbiorcy.
 
-The project should be suitable for deployment through GitHub Pages using GitHub Actions. The final output should be viewable externally as a static HTML report.
+Projekt powinien być odpowiedni do wdrożenia na GitHub Pages za pomocą GitHub Actions. Końcowy wynik powinien być dostępny jako statyczny raport HTML.
+
+**Język generowanego raportu:** Polski
 
 ## 2. Business Goal
 

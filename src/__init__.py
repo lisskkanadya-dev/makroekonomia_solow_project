@@ -1,0 +1,1 @@
+"""Solow convergence project package."""

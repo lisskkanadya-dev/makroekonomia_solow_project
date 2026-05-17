@@ -18,7 +18,7 @@ Implement a Python application that:
 3. tests beta-convergence,
 4. tests sigma-convergence,
 5. generates charts,
-6. creates a static HTML report.
+6. creates a static HTML report in Polish language.
 </main_goal>
 
 <project_structure>

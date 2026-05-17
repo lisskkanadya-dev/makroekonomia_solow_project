@@ -1,8 +1,10 @@
-# Solow Model and Convergence Test
+# Model Solowa i Test Konwergencji
 
-This project is a lightweight Python web project for an academic empirical task. It downloads GDP per capita data, calculates growth rates, tests beta-convergence and sigma-convergence, generates charts, and builds a static HTML report.
+Projekt jest lekką aplikacją Python dla zadania akademickiego empirycznego. Pobiera dane o PKB per capita, oblicza tempo wzrostu, sprawdza beta-konwergencję i sigma-konwergencję, generuje wykresy i buduje statyczny raport HTML.
 
-The generated report can be deployed with GitHub Actions to GitHub Pages.
+Generowany raport może być wdrożony na GitHub Pages za pomocą GitHub Actions.
+
+**Język raportu:** Polski
 
 ## Research Question
 

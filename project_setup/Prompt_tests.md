@@ -7,7 +7,7 @@ Your task is to generate automated tests before the implementation is written.
 
 <context>
 The project is a lightweight Python web application for an academic economics assignment.
-It downloads GDP per capita data, calculates average annual growth, tests beta-convergence and sigma-convergence, generates charts, and creates a static HTML report for GitHub Pages.
+It downloads GDP per capita data, calculates average annual growth, tests beta-convergence and sigma-convergence, generates charts, and creates a static HTML report in Polish language for GitHub Pages.
 </context>
 
 <main_goal>
